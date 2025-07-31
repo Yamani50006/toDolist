@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# toDolist
 
-## Getting Started
+A simple and intuitive to-do list application built with Next.js, Zustand, and Tailwind CSS.
 
-First, run the development server:
+## Features and Functionality
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*   **Add Tasks:**  Easily add new tasks to your list using the input field and "Add" button.
+*   **Mark as Complete:** Check the checkbox next to a task to mark it as completed. This also applies a strikethrough style.
+*   **Edit Tasks:**  Click the edit icon (BiEdit) to open a dialog and modify the task title.
+*   **Delete Tasks:** Remove tasks from the list by clicking the trash icon (FaTrash).
+*   **Task Counter:**  Displays the number of completed tasks.
+*   **Responsive Design:**  The application is designed to be responsive and work well on different screen sizes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technology Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*   **Frontend:**
+    *   [Next.js](https://nextjs.org/) - React framework for building performant web applications.
+    *   [React](https://reactjs.org/) - JavaScript library for building user interfaces.
+    *   [Zustand](https://github.com/pmndrs/zustand) -  Small, fast and scaleable bearbones state-management solution.
+    *   [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework for rapid UI development.
+    *   [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible components for building high-quality design systems and user interfaces. Used for the `Dialog` component.
+    *   [Lucide React](https://lucide.dev/) - Beautifully simple, pixel-perfect icons. Used for the `XIcon` in the dialog component.
+    *   [react-icons](https://react-icons.github.io/react-icons) - Include popular icons in your React projects easily. Used for delete and edit icons.
+*   **State Management:**
+    *   Zustand
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Prerequisites
 
-## Learn More
+*   [Node.js](https://nodejs.org/) (version 18 or later recommended)
+*   [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 
-To learn more about Next.js, take a look at the following resources:
+## Installation Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    git clone https://github.com/Yamani50006/toDolist.git
+    ```
 
-## Deploy on Vercel
+2.  Navigate to the project directory:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    cd toDolist
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  Install dependencies using npm or yarn:
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+## Usage Guide
+
+1.  Start the development server:
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+2.  Open your browser and navigate to `http://localhost:3000`.
+
+3.  **Adding Tasks:**
+    *   Type the task title in the input field located below the "Home List" heading.
+    *   Click the "Add" button to add the task to the list.
+
+4.  **Completing Tasks:**
+    *   Click the checkbox next to the task to toggle its completion status. Completed tasks will have a strikethrough applied.
+
+5.  **Editing Tasks:**
+    *   Click the edit icon (BiEdit) next to the task you want to edit.  A dialog box will appear.
+    *   Modify the task title in the input field within the dialog.
+    *   Click the "Edit" button to save the changes.
+
+6.  **Deleting Tasks:**
+    *   Click the trash icon (FaTrash) next to the task you want to delete.
+
+## API Documentation
+
+This project does not have an external API.  All task data is managed in the client-side state using Zustand.  The state is managed within the `src/store/useStore.ts` file.
+
+## Contributing Guidelines
+
+Contributions are welcome!  Here's how you can contribute:
+
+1.  Fork the repository.
+2.  Create a new branch for your feature or bug fix.
+3.  Make your changes and commit them with clear, concise messages.
+4.  Push your changes to your fork.
+5.  Submit a pull request to the `main` branch of the original repository.
+
+Please ensure your code adheres to the existing coding style and includes appropriate tests.
+
+## License Information
+
+No license specified. All rights reserved by the author.
+
+## Contact/Support Information
+
+For questions or support, please contact [Yamani50006](https://github.com/Yamani50006) through GitHub.
